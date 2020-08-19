@@ -1,0 +1,101 @@
+.displaying-products{
+    background-color: white;
+    margin-top: 1rem;
+    overflow-x: scroll;
+}
+   
+    
+
+.displaying-products .col-4{
+    
+}
+.displaying-products .row {
+    border-bottom: .5px solid rgba(0, 0, 0, 0.26);
+   width: 100%;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: .5rem 0rem;
+}
+.displaying-products .col-3{
+  
+}
+.displaying-products .col-1 {
+   
+}
+.displaying-products .col-3 button:first-child {
+margin-right: 1rem;
+}
+
+.displaying-products p{
+    margin: 0;
+    font-size: .8rem;
+    
+}
+.displaying-products h6{
+    margin: 0;
+     padding: .5rem 0rem;
+}
+
+.my-pagination{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.my-pagination a {
+    color: black;
+    margin: .5rem;
+}
+
+
+@media (max-width: 1200px) {
+
+
+    .my-products-components-container {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .my-products-components-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .user-actions {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .selection-btns {
+        display: flex;
+    }
+
+    .selection-btns button:first-child {
+
+        width: 50%;
+        font-size: .8rem;
+        padding: .5rem;
+    }
+
+    .selection-btns button:nth-child(2) {
+        width: 50%;
+        font-size: .8rem;
+    }
+
+    .user-actions {
+        display: flex;
+    }
+
+}

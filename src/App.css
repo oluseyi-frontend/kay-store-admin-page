@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard  {
+    width: 100%;
+    height: 100vh;
+    background-color: #e7dede;
+    position: relative;
+}
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+   
+   
+}
+
+
+.my-container  {
+    width: 100%;
+   
+   justify-content: space-between;
+    display: flex;
+    padding: .5rem .5rem;
+   background-color: white;
+    align-items: center;
+  
+ 
+}
+
+
+aside {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background-color: #00000042;
+  transition: all .5s ease;
+  z-index: 2;
+}
+.aside-container {
+    width: 40%;
+    height: 100%;  
+}
+.opening-burger{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+   
+}
+.top-line {
+    width: 1.2rem;
+    height: .1rem;
+    margin: .1rem;
+    background-color: black;
+}
+.middle-line {
+    width: 1.2rem;
+    height: .1rem;
+    margin: .1rem;
+       background-color: black;
+}
+.bottom-line {
+    width: 1.2rem;
+    height: .1rem;
+    margin: .1rem;
+       background-color: black;
+}
+.main-aside{
+     position: absolute;
+     top: 0;
+     width: 15%;
+    height: 100%;
+     background-color: #391f66;
+     z-index: 2;
+}
+.aside-inactive{
+     position: absolute;
+     top: 0;
+     width: 40%;
+     height: 100%;
+     
+
+}
+.aside-active {
+      transform: translateX(-100%);
+}
+
+.brand-title-active {
+color: #673AB7;
+}
+
+.main-aside-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-aside-title{
+    width: 100%;
+    background-color: #673AB7;
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    justify-content: center;
+}
+.main-aside-title h3{
+    padding: 0 0 0 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.main-aside-title p {
+    padding: 0 0 0 1rem;
+    margin-bottom: .5rem;
+}
+.main-aside-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: white;
+    padding: 0 0 0 1.5rem;
+}
+
+.main-aside-links a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem 0rem;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+.main-aside-links svg {
+    margin-right: .6rem;
+}
+.main-aside-links h4{
+    font-weight: bolder;
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+
+.home,
+.add-users-component,
+.all-users-component,
+.orders-component,
+.products-components,
+.add-products,
+.all-users-modal,
+.view-order {
+    width: 85%;
+    margin: 0 0 0 auto;
+    background-color: #E6E6E6;
+    display: flex;
+    height: 93.9vh;
+    padding-bottom: 2rem;  
+    overflow: scroll;
+    
+}
+.orders-component{
+    position: relative;
+}
+
+.my-home-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 22rem 0rem;
+    color: rgb(104, 98, 98);
+}
+
+.my-products-components-container 
+{
+    width: 75%;
+    margin: 0 auto;  
+    margin-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.all-products-title{
+     margin: 1rem 0 2rem 0;
+     color: rgb(104, 98, 98);
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-products-title h4{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.all-products-title p{
+    font-size: 1rem;
+}
+.all-products-others{
+    display: flex;
+    flex-direction: column;
+}
+.all-products-others-link{
+    margin-bottom: 3rem;
+}
+
+.all-products-others a{
+background-color: #673AB7;
+padding: .4rem;
+border-radius: 3px;
+color: white;
+}
+
+.all-products-others button{
+    padding: .5rem 1rem;
+    border: none;
+    background-color: #F6737F;
+    color: rgb(68, 65, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+
+}
+.all-products-others button:focus{
+    outline: none;
+}
+
+.displayed-products-component {
+    margin-top: 4rem;
+}
+ .m-container {
+     width: 120vh;   
+    
+    
+ }
+.add-products-container{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    
+}
+.add-products h2 {
+    color: rgba(0, 0, 0, 0.336);
+    font-size: 1.4rem;
+}
+.add-products h5 {
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.add-products form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.add-products form input{
+    margin: .5rem 0rem;
+    padding: .8rem .5rem;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+}
+.add-products textarea{
+      margin: .5rem 0rem;
+        padding: .8rem .5rem;
+       border: none;
+        border-radius: 2px;
+       font-family: 'Segoe UI',
+       Tahoma,
+       Geneva,
+       Verdana,
+       sans-serif;
+}
+.add-products form input:focus{
+    outline: none;
+}
+
+.add-products form textarea:focus {
+    outline: none;
+}
+
+.add-products form h5 {
+    margin-bottom: 1rem;
+}
+
+.add-products form button{
+    background-color: #F6737F;
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: .5rem .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.add-products button{
+        background-color: #F6737F;
+        
+        border: none;
+        outline: none;
+        padding: .5rem .8rem;
+        font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+        color: white;
+        margin-top: .5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: capitalize;
+}
+.my-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.295);
+    bottom: 0;
+}
+
+.my-modal-container{
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+.my-modal-inner-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.my-modal-headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-modal-close button{
+background-color: rgb(243, 31, 31);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.my-modal-body {
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+.main-aside{
+    width: 20%;
+    
+  
+}
+.home,
+.add-users-component,
+.all-users-component,
+.orders-component,
+.products-components,
+.add-products,
+.all-users-modal,
+.view-order {
+    width: 80%;
+    margin: 0 0 0 auto;
+    background-color: #E6E6E6;
+    display: flex;
+    padding-bottom: 2rem;
+    overflow: scroll;
+
+}
+
+.my-all-users-container {
+    width: 80%;
+}
+.add-products-container{
+    width: 60%;
+    
+}
+.my-modal-container{
+    width: 50%;
+}
+
+ 
+}
+
+@media (max-width: 992px) {
+.main-aside {
+    width: 25%;
+   
+}
+
+.home,
+.add-users-component,
+.all-users-component,
+.orders-component,
+.products-components,
+.add-products,
+.all-users-modal,
+.view-order {
+    width: 75%;
+    margin: 0 0 0 auto;
+    background-color: #E6E6E6;
+    display: flex;
+ 
+    padding-bottom: 2rem;
+    overflow: scroll;
+
+}
+.add-products-container {
+    width: 80%;
+}
+.my-modal-container {
+    width: 50%;
+}
+.login-page-container {
+    width: 60%;
+}
+  
+}
+
+@media (max-width: 768px) {
+   .home,
+   .all-users-component,
+   .add-users-component,
+   .orders-component,
+   .products-components,
+   .add-products{
+       width: 100%;
+       margin: 0;
+   }
+   .my-products-components-container{
+       width: 90%;
+   }
+   .displaying-products{
+       width: 100%;
+   }
+   .m-container {
+       width: 100vh;
+   }
+  .opening-btn {
+      display: flex;
+      position: absolute;
+  }
+  .add-products-container {
+      width: 85%;
+  }
+  .my-modal-container {
+      width: 80%;
+  }
+  .login-page-container {
+      width: 70%;
+  }
+}
+@media (max-width: 576px) {
+
+.aside-container {
+    width: 45%;
+ 
+}
+.add-products-container {
+    width: 90%;
+}
+.my-modal-container {
+    width: 90%;
+}
+.login-page-container {
+    width: 80%;
+}
+}
+
+@media (max-width: 400px) {
+
+  .aside-container {
+      width: 60%;
+   
+  }
+
+  .brand-title-active{
+      font-size: .8rem;
+  }
+  .login-page-container {
+      width: 90%;
+  }
+  
+}

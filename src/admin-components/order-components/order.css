@@ -1,0 +1,294 @@
+.my-orders-component-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.displaying-all-orders{
+    background-color: white;
+    margin-top: 2rem;
+    overflow: scroll;
+    margin-bottom: 1rem;
+
+}
+.my-orders-component-container select{
+    border: none;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.26);
+}
+.my-orders-component-container select:focus {
+   outline: none;
+}
+.order-actions-btn{
+    margin-top: 2rem;
+}
+.order-actions-btn button{
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.order-actions-btn select {
+    padding: 6px 12px
+}
+.displaying-all-orders .row {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .5rem 0rem;
+     
+}
+
+.displaying-all-orders h6{
+ margin: 0;
+  padding: .5rem 0rem;
+   font-size: .8rem;
+}
+
+
+.displaying-all-orders p{
+    margin: 0;
+    font-size: .8rem;
+    padding: .5rem 0rem;
+}
+
+.displaying-all-orders .badge{
+    padding: .5rem .5rem;
+    font-size: .8rem;
+}
+
+.displaying-all-orders .row button{
+    margin-left: .5rem;
+}
+
+.displaying-all-orders .row select{
+
+}
+.displaying-all-orders p{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.order-modal{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.212);
+   
+  
+}
+
+.order-modal-container .customer-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-modal-container svg {
+    cursor: pointer;
+}
+
+.order-modal-container {
+    background-color: white;
+      width: 50%;
+       overflow: scroll;
+       height: 80%;
+}
+
+.order-modal-container .customer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-modal-container .order-details {
+    display: flex;
+    flex-direction: column;
+}
+.order-details-inner {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.order-details-inner img {
+    height: 200px;
+    width: 100px;
+}
+.order-details-inner .product-details {
+    display: flex;
+    justify-content: space-between;
+}
+.view-order{
+    display: flex;
+}
+.view-order-container{
+    width: 100%;
+    padding: 1rem;
+   
+}
+.view-order-container2 {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.view-order-container2 .customer {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+.view-order-container2 .product-details {
+padding: .5rem;
+}
+.view-order-container2 .product-details p {
+    margin: 0;
+}
+
+.view-order-container2 .product-details h6 {
+    margin: 0;
+}
+.view-order-container2 img {
+    height: 150px;
+    width: 150px;
+}
+.customer p{
+    margin: 0;
+}
+.customer h6{
+    margin: 0;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+    .my-orders-component-container {
+        width: 80%;
+    }
+    .view-order-container2{
+        width: 70%;
+    }
+   .main-aside {
+       width: 20%;
+
+
+   }
+
+  
+
+}
+
+@media (max-width: 992px) {
+
+    .my-orders-component-container {
+        width: 95%;
+    }
+     .view-order-container2 {
+         width: 85%;
+     }
+     .main-aside {
+         width: 25%;
+
+     }
+
+    
+}
+
+@media (max-width: 768px) {
+     .view-order-container2 {
+         width: 85%;
+     }
+
+      .view-order{
+          width: 100%;
+      }
+
+      .displaying-all-orders {
+          width: 100%;
+      }
+
+      .m-container {
+          width: 100vh;
+      }
+
+      .opening-btn {
+          display: flex;
+          position: absolute;
+      }
+      .view-order p{
+          font-size: .8rem;
+      }
+      .view-order h6{
+          font-size: .8rem;
+      }
+}
+
+@media (max-width: 576px) {
+    .user-actions {
+        display: flex;
+    }
+     .view-order-container2 {
+         width: 95%;
+     }
+
+}
+
+@media (max-width: 400px) {
+    .selection-btns {
+        display: flex;
+    }
+
+    .selection-btns button:first-child {
+
+        width: 50%;
+        font-size: .8rem;
+        padding: .5rem;
+    }
+
+    .selection-btns button:nth-child(2) {
+        width: 50%;
+        font-size: .8rem;
+    }
+
+    .order-actions {
+        display: flex;
+        
+    }
+    .order-actions button{
+font-size: .8rem;
+    }
+    .order-actions-btn button {
+        width: 50%;
+    }
+
+    .order-actions-btn select {
+      width: 50%;
+    }
+    .view-order-container2 {
+        width: 100%;
+        padding: 0rem;
+    }
+.view-order-container{
+    padding: .5rem;
+}
+  .view-order p {
+      font-size: .8rem;
+  }
+
+  .view-order h6 {
+      font-size: .8rem;
+  }
+}
