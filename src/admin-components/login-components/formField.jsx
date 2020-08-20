@@ -63,8 +63,8 @@ const FormField = () => {
   return (
     <>
       <div className="form-heading">
-        <h4>Admin Login</h4>
-        <h6>Login to your dashboard area to manage your website</h6>
+        <h4  className='text-center'>Admin Login</h4>
+        <h6 className='text-center'>Login to your dashboard area to manage your website</h6>
       </div>
           <form action="" onSubmit={handleSubmit}>
               <p className='text-center'>{message}</p>

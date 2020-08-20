@@ -5,11 +5,11 @@ import { useState } from "react";
 import { UsersData } from "./allUsers/Usersdata";
 import { StoreOrders } from "./order-components/Orderdata";
 import firebase, { db, auth } from "./firebase";
-import { useHistory } from 'react-router-dom';
+import { useHistory, Redirect } from 'react-router-dom';
 export const adminContext = React.createContext();
 
 export const ContextProvider = (props) => {
-
+const history = useHistory()
   const [allUsers, setAllUsers] = useState([]);
   const [orders, setOrders] = useState([]);
   const [user, setUser] = useState(null);
@@ -30,15 +30,19 @@ export const ContextProvider = (props) => {
     getFromDatabase();
   }, []);
 
-  useEffect(() => {
-    
-   
-  },[])
+    useEffect(() => {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          setUser(user);
+        } else {
+          setUser(null);
+        }
+      });
+    }, []);
 
   const handleLogOut = () => {
     auth.signOut()
-      .then(() => {
-        setUser(null)
+      .then(() => {        
       })
   }
   const getFromDatabase = () => {

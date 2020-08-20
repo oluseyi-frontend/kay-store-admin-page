@@ -77,7 +77,7 @@ const OrderList = ({ order, orders, displayedOrder,message, setMessage, handleVi
         <div className="col-1">
           <p>{displayedOrder.indexOf(order) + 1}</p>
         </div>
-        <div className="col-4">
+        <div className="col-4 order-id">
           <p>{order.id} </p>
         </div>
         <div className="col-2">

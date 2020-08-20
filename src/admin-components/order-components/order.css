@@ -172,6 +172,7 @@ padding: .5rem;
 
 
 
+
 @media (max-width: 1200px) {
 
 
@@ -243,6 +244,9 @@ padding: .5rem;
      .view-order-container2 {
          width: 95%;
      }
+     .order-id p {
+         font-size: .6rem;
+     }
 
 }
 
@@ -290,5 +294,8 @@ font-size: .8rem;
 
   .view-order h6 {
       font-size: .8rem;
+  }
+  .order-id p {
+      font-size: .6rem;
   }
 }
